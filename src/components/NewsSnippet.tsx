@@ -1,18 +1,21 @@
 import React from 'react';
-import { Card, Typography, Tag, Avatar } from 'antd';
+import { Card, Typography, Tag, Avatar, Collapse } from 'antd';
 import { IData_SnippetNews } from '../types/interfaces';
+import './NewsSnippet.css';
 
 const { Title, Text } = Typography;
+const { Panel } = Collapse;
 
+const text = "A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.";
 interface Props {
   news: IData_SnippetNews;
 }
 
-const NewsSnippet: React.FC<Props> = ({ news }: { news: IData_SnippetNews }) => {
+const NewsSnippet: React.FC<Props> = ({ news }) => {
   const { TI, AB, URL, DP, DOM, KW, FAV, HIGHLIGHTS } = news;
 
   return (
-    <Card hoverable style={{ margin: '20px', backgroundColor: '#abcada' }}>
+    <Card hoverable className='card'>
       <a href={URL} target="_blank" rel="noopener noreferrer">
         {FAV && <Avatar src={FAV} alt="favicon" style={{ marginBottom: '8px' }} />}
         <Title level={4}>{TI}</Title>
@@ -38,7 +41,13 @@ const NewsSnippet: React.FC<Props> = ({ news }: { news: IData_SnippetNews }) => 
           ))}
         </div>
       )}
-    </Card>
+
+      <Collapse style={{ marginTop: '20px' }}>
+        <Panel className='collapse-header' header="View Duplicates" key="1">
+          <p className='text'>{text}</p>
+        </Panel>
+      </Collapse>
+    </Card >
   );
 };
 
