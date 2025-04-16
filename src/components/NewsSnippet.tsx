@@ -18,7 +18,7 @@ const NewsSnippet: React.FC<Props> = ({ news }) => {
     <Card hoverable className='card'>
       <a href={URL} target="_blank" rel="noopener noreferrer">
         {FAV && <Avatar src={FAV} alt="favicon" style={{ marginBottom: '8px' }} />}
-        <Title level={4}>{TI}</Title>
+        <Title level={4} className='link'>{TI}</Title>
         <Text>{new Date(DP).toLocaleString()}</Text>
         <Text type="secondary" style={{ display: 'block', marginBottom: '8px' }}>
           {DOM}
