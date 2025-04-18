@@ -1,5 +1,3 @@
-@import '../../styles/reset.css';
-
 .wrapperCard {
   margin: 20px;
   background: linear-gradient(to bottom right, #20385f 7%, #011117 93%);
@@ -19,18 +17,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-
-.collapseHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* .collapseHeader .link {
-  color: red;
-} */
 
 .iconLink {
   width: 170px;
