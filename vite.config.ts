@@ -10,4 +10,9 @@ export default defineConfig({
     outDir: 'dist',
   },
   base: '/test_kaspersky/',
+  css: {
+    preprocessorOptions: {
+      scss: {},
+    },
+  },
 });

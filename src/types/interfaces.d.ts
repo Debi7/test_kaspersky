@@ -1,15 +1,15 @@
-export interface IData_TagItem {
+interface IData_TagItem {
   value: string; // название тега
   count: number; // кол-во тегов с указанным названием
 }
 
-export interface IData_TrafficItem {
+interface IData_TrafficItem {
   value: string; // название страны-источник траффика
   count: number; // объём траффика для указанной страны
 }
 
 // интерфейс для данных о новостях
-export interface IData_SnippetNews {
+interface IData_SnippetNews {
   ID: number; // идентификатор новости
   TI: string; // заголовок новости
   AB: string; // содержимое новости
