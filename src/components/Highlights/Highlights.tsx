@@ -1,6 +1,7 @@
 import React from 'react';
-import { Typography, Tag, Button } from 'antd';
-
+import { Typography, Tag } from 'antd';
+import { ButtonSourse } from '../ButtonSourse/ButtonSourse';
+import styles from './Highlights.module.css';
 const { Text } = Typography;
 
 interface HighlightsProps {
@@ -51,12 +52,12 @@ export const Highlights: React.FC<HighlightsProps> = ({ highlights, onShowMore }
         </Text>
       ))}
       {onShowMore && (
-        <Button
-          style={{ background: 'inherit', marginTop: '5px', padding: '0px', border: 'none', color: 'blue' }}
+        <ButtonSourse
+          type='button'
+          text='Show more'
+          className={styles.btnShowMore}
           onClick={onShowMore}
-        >
-          Show more
-        </Button>
+        />
       )}
     </div>
   );

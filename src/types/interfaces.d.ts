@@ -1,5 +1,6 @@
 interface IData_TagItem {
   value: string; // название тега
+  original: string;
   count: number; // кол-во тегов с указанным названием
 }
 

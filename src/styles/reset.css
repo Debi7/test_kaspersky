@@ -65,7 +65,7 @@ address {
 /* Form */
 input,
 textarea,
-button,
+anyButton,
 select {
   font-family: inherit;
   font-size: inherit;
@@ -77,7 +77,7 @@ input::-ms-clear {
   display: none;
 }
 
-button,
+anyButton,
 input[type="submit"] {
   display: inline-block;
   box-shadow: none;
@@ -88,12 +88,12 @@ input[type="submit"] {
 
 input:focus,
 input:active,
-button:focus,
-button:active {
+anyButton:focus,
+anyButton:active {
   outline: none;
 }
 
-button::-moz-focus-inner {
+anyButton::-moz-focus-inner {
   padding: 0;
   border: 0;
 }

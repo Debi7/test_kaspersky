@@ -1,5 +1,4 @@
 .wrapperCard {
-  margin: 20px;
   background: linear-gradient(to bottom right, #20385f 7%, #011117 93%);
   border-radius: 20px;
 }
@@ -11,30 +10,47 @@
   border-radius: 11px;
 }
 
-.timeTraffic {
-  width: 700px;
+.wrapperDate {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.iconLink {
+.wrapperSent {
   width: 170px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapperDuplicates {
+  padding: 20px;
+  height: 130px;
+  margin-top: 10px;
+  border: 2px solid blue;
+  border-radius: 11px;
+}
+
+.sentNews {
+  width: 100px;
+  text-align: center;
+  background-color: rgb(134, 239, 150);
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.iconDuplicates {
+  width: 45px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.icon {
-  margin-bottom: 8px;
-  height: 20px;
-  width: 20px;
-  background-color: grey;
-}
-
-.link {
-  display: block;
-  margin-bottom: 8px;
-  text-decoration-line: underline;
-  color: blue;
+.headerDuplicates {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }

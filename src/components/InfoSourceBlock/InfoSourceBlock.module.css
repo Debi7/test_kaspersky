@@ -1,0 +1,39 @@
+.wrapperInfoSource {
+  display: flex;
+  width: 500px;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.withAu {
+  justify-content: space-between;
+}
+
+.withoutAu {
+  justify-content: flex-start;
+}
+
+.fav {
+  margin: 0px 5px 2px 0px;
+  height: 17px;
+  width: 17px;
+  background-color: grey;
+}
+
+.icon {
+  width: 14px;
+  margin-right: 2px;
+}
+
+.cntr,
+.lang,
+.au {
+  display: flex;
+  text-align: center;
+  color: #979696;
+}
+
+.au {
+  display: inline;
+  flex: 1;
+}

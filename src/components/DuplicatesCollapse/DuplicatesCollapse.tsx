@@ -11,7 +11,7 @@ interface DuplicatesCollapseProps {
 
 export const DuplicatesCollapse: React.FC<DuplicatesCollapseProps> = ({ text, header = "View Duplicates" }) => {
   return (
-    <Collapse style={{ marginTop: '20px' }}>
+    <Collapse className={styles.wrapperCollapse}>
       <Panel className={styles.collapseHeader} header={header} key="1">
         <p className={styles.text}>{text}</p>
       </Panel>

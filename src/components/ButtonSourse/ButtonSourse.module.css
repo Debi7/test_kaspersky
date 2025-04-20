@@ -1,0 +1,9 @@
+.btnSourse {
+  font-weight: bold;
+  color: #1938ed;
+  background-color: #4a3f67;
+  border-radius: 7px;
+  border: none;
+  width: fit-content;
+  text-align: center;
+}
