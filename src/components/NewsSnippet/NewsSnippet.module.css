@@ -35,7 +35,6 @@
 .sentNews {
   width: 100px;
   text-align: center;
-  background-color: rgb(134, 239, 150);
   border-radius: 7px;
   font-size: 14px;
   font-weight: 500;
@@ -53,4 +52,8 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.6) !important;
 }

@@ -36,7 +36,9 @@ export const NewsSnippet: React.FC<NewsSnippetProps> = ({ news }) => {
           <TimeTrafficBlock timeTraffic={news} />
 
           <div className={styles.wrapperSent}>
-            <div className={styles.sentNews}>{ucFirst(SENT)}</div>
+            <div className={styles.sentNews} style={{ backgroundColor: SENT === 'negative' ? '#ff0000' : 'rgb(134, 239, 150)' }}>
+              {ucFirst(SENT)}
+            </div>
             <Tooltip title="Информация">
               <InfoSquareIcon />
             </Tooltip>
@@ -58,7 +60,7 @@ export const NewsSnippet: React.FC<NewsSnippetProps> = ({ news }) => {
 
         <div className={styles.headerDuplicates}>
           <div>
-            <span>Duplicates: </span>
+            <span className={styles.text}>Duplicates: </span>
             <span style={{ color: 'white' }}>192</span>
           </div>
           <button style={{ backgroundColor: 'inherit', color: '#808080', cursor: 'pointer' }}>By Relevance</button>

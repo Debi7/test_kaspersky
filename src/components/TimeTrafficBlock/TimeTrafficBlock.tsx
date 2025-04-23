@@ -16,9 +16,10 @@ export const TimeTrafficBlock: React.FC<TimeTrafficProps> = ({ timeTraffic }) =>
 
   return (
     <div className={styles.timeTraffic}>
-      <Text>{formattedDateTime}</Text>
-      <Text>{REACH}K Reach</Text>
-      <Text>
+      <Text className={styles.text}>{formattedDateTime}</Text>
+      <Text className={styles.text}>{REACH}
+        <span style={{ color: 'white' }}>K{' '}</span>Reach</Text>
+      <Text className={styles.text}>
         Top Traffic:{' '}
         {TRAFFIC.map((item, index) => (
           <span key={index}>
