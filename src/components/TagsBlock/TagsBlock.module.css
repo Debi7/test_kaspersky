@@ -1,6 +1,5 @@
 .wrapperTags {
-  width: 1100px;
-  height: 30px;
+  width: auto;
   margin: 15px 0px;
   display: flex;
   flex-wrap: nowrap;
@@ -19,9 +18,8 @@
 }
 
 
-@media (max-width: 780px) {
+@media (max-width: 1192px) {
   .wrapperTags {
-    width: auto;
     flex-wrap: wrap;
   }
 }
