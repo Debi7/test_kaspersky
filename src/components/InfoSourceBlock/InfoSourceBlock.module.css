@@ -2,7 +2,7 @@
   display: flex;
   width: 500px;
   gap: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .withAu {
@@ -33,7 +33,14 @@
   color: #979696;
 }
 
-.au {
-  display: inline;
-  flex: 1;
+
+@media (max-width: 670px) {
+  .wrapperInfoSource {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .withAu {
+    justify-content: flex-start;
+  }
 }

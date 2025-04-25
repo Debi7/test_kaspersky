@@ -1,4 +1,5 @@
 .wrapperCard {
+  margin: 0 auto;
   background: linear-gradient(to bottom right, #20385f 7%, #011117 93%);
   border-radius: 20px;
 }
@@ -11,17 +12,19 @@
 }
 
 .wrapperDate {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .wrapperSent {
-  width: 170px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 8px;
 }
 
 .wrapperDuplicates {
@@ -56,4 +59,40 @@
 
 .text {
   color: rgba(255, 255, 255, 0.6) !important;
+}
+
+
+@media (max-width: 1028px) {
+  .card {
+    padding: 20px;
+  }
+
+  .wrapperDate {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrapperSent {
+    justify-content: flex-start;
+    margin: 5px 0px;
+  }
+
+  .sentNews {
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1092px) {
+  .wrapperDuplicates {
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .iconDuplicates {
+    margin-top: 5px;
+  }
 }

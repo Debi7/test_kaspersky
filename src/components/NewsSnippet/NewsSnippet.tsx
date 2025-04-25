@@ -82,6 +82,6 @@ export const NewsSnippet: React.FC<NewsSnippetProps> = ({ news }) => {
 
         <DuplicatesCollapse text={dummyText} />
       </div>
-    </Card>
+    </Card >
   );
 };

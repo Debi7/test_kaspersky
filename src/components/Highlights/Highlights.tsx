@@ -47,7 +47,7 @@ export const Highlights: React.FC<HighlightsProps> = ({ highlights, onShowMore }
   return (
     <div style={{ marginTop: '20px' }}>
       {highlights.map((highlight, index) => (
-        <Text key={index} style={{ display: 'block', color: 'white' }}>
+        <Text key={index} style={{ display: 'block', color: 'white', marginBottom: '5px' }}>
           {parseHighlights(highlight)}
         </Text>
       ))}
